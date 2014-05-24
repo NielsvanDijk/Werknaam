@@ -470,7 +470,7 @@ class Application extends Container implements HttpKernelInterface, TerminableIn
     }
     public static function getBootstrapFile()
     {
-        return '/Applications/XAMPP/xamppfiles/htdocs/werknaam-2/vendor/laravel/framework/src/Illuminate/Foundation' . '/start.php';
+        return '/Applications/XAMPP/xamppfiles/htdocs/werknaam/vendor/laravel/framework/src/Illuminate/Foundation' . '/start.php';
     }
     public function startExceptionHandling()
     {
@@ -3372,7 +3372,7 @@ class ErrorHandler
         }
         if ($this->displayErrors && error_reporting() & $level && $this->level & $level) {
             if (!class_exists('Symfony\\Component\\Debug\\Exception\\ContextErrorException')) {
-                require '/Applications/XAMPP/xamppfiles/htdocs/werknaam-2/vendor/symfony/debug/Symfony/Component/Debug' . '/Exception/ContextErrorException.php';
+                require '/Applications/XAMPP/xamppfiles/htdocs/werknaam/vendor/symfony/debug/Symfony/Component/Debug' . '/Exception/ContextErrorException.php';
             }
             $exception = new ContextErrorException(sprintf('%s: %s in %s line %d', isset($this->levels[$level]) ? $this->levels[$level] : $level, $message, $file, $line), 0, $level, $file, $line, $context);
             $exceptionHandler = set_exception_handler(function () {
@@ -3382,7 +3382,7 @@ class ErrorHandler
             if (is_array($exceptionHandler) && $exceptionHandler[0] instanceof ExceptionHandler) {
                 $exceptionHandler[0]->handle($exception);
                 if (!class_exists('Symfony\\Component\\Debug\\Exception\\DummyException')) {
-                    require '/Applications/XAMPP/xamppfiles/htdocs/werknaam-2/vendor/symfony/debug/Symfony/Component/Debug' . '/Exception/DummyException.php';
+                    require '/Applications/XAMPP/xamppfiles/htdocs/werknaam/vendor/symfony/debug/Symfony/Component/Debug' . '/Exception/DummyException.php';
                 }
                 set_exception_handler(function (\Exception $e) use($exceptionHandler) {
                     if (!$e instanceof DummyException) {
@@ -10558,7 +10558,7 @@ class PrettyPageHandler extends Handler
             return Handler::DONE;
         }
         if (!($resources = $this->getResourcesPath())) {
-            $resources = '/Applications/XAMPP/xamppfiles/htdocs/werknaam-2/vendor/filp/whoops/src/Whoops/Handler' . '/../Resources';
+            $resources = '/Applications/XAMPP/xamppfiles/htdocs/werknaam/vendor/filp/whoops/src/Whoops/Handler' . '/../Resources';
         }
         $templateFile = "{$resources}/pretty-template.php";
         $cssFile = "{$resources}/pretty-page.css";

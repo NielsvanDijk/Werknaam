@@ -45,6 +45,9 @@ return array(
     'File_ASN1_Element' => $vendorDir . '/phpseclib/phpseclib/phpseclib/File/ASN1.php',
     'File_X509' => $vendorDir . '/phpseclib/phpseclib/phpseclib/File/X509.php',
     'HomeController' => $baseDir . '/app/controllers/HomeController.php',
+    'Ignited\\Pdf\\Facades\\Pdf' => $vendorDir . '/ignited/laravel-pdf/src/Ignited/Pdf/Facades/Pdf.php',
+    'Ignited\\Pdf\\PdfFactory' => $vendorDir . '/ignited/laravel-pdf/src/Ignited/Pdf/PdfFactory.php',
+    'Ignited\\Pdf\\PdfServiceProvider' => $vendorDir . '/ignited/laravel-pdf/src/Ignited/Pdf/PdfServiceProvider.php',
     'IlluminateQueueClosure' => $vendorDir . '/laravel/framework/src/Illuminate/Queue/IlluminateQueueClosure.php',
     'Illuminate\\Auth\\AuthManager' => $vendorDir . '/laravel/framework/src/Illuminate/Auth/AuthManager.php',
     'Illuminate\\Auth\\AuthServiceProvider' => $vendorDir . '/laravel/framework/src/Illuminate/Auth/AuthServiceProvider.php',
@@ -395,6 +398,7 @@ return array(
     'Illuminate\\Workbench\\PackageCreator' => $vendorDir . '/laravel/framework/src/Illuminate/Workbench/PackageCreator.php',
     'Illuminate\\Workbench\\Starter' => $vendorDir . '/laravel/framework/src/Illuminate/Workbench/Starter.php',
     'Illuminate\\Workbench\\WorkbenchServiceProvider' => $vendorDir . '/laravel/framework/src/Illuminate/Workbench/WorkbenchServiceProvider.php',
+    'InvoiceController' => $baseDir . '/app/controllers/InvoiceController.php',
     'Jeremeamia\\SuperClosure\\ClosureLocation' => $vendorDir . '/jeremeamia/SuperClosure/src/Jeremeamia/SuperClosure/ClosureLocation.php',
     'Jeremeamia\\SuperClosure\\ClosureParser' => $vendorDir . '/jeremeamia/SuperClosure/src/Jeremeamia/SuperClosure/ClosureParser.php',
     'Jeremeamia\\SuperClosure\\SerializableClosure' => $vendorDir . '/jeremeamia/SuperClosure/src/Jeremeamia/SuperClosure/SerializableClosure.php',
@@ -1627,4 +1631,5 @@ return array(
     'Whoops\\Provider\\Zend\\ExceptionStrategy' => $vendorDir . '/filp/whoops/src/Whoops/Provider/Zend/ExceptionStrategy.php',
     'Whoops\\Provider\\Zend\\RouteNotFoundStrategy' => $vendorDir . '/filp/whoops/src/Whoops/Provider/Zend/RouteNotFoundStrategy.php',
     'Whoops\\Run' => $vendorDir . '/filp/whoops/src/Whoops/Run.php',
+    'WkHtmlToPdf' => $vendorDir . '/mikehaertl/phpwkhtmltopdf/WkHtmlToPdf.php',
 );
